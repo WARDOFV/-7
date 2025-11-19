@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void Treyg(double* side, double* height, double* area) {
+    *area = (*side * *height) / 2;
+}
+
+int main() {
+    double side, height, area;
+
+    cout << "Dlina = ";
+    cin >> side;
+    cout << "visota = ";
+    cin >> height;
+
+    Treyg(&side, &height, &area);
+
+    cout << "S= " << area << endl;
+
+    return 0;
+}
